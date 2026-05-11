@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Faux Academic Notes</title>
 
   <style>
@@ -11,114 +12,207 @@
       font-family: Georgia, "Times New Roman", serif;
       background: #f7f6f2;
       color: #1f1f1f;
-      line-height: 1.6;
+      line-height: 1.7;
     }
 
     .container {
-      max-width: 850px;
+      max-width: 900px;
       margin: 0 auto;
       padding: 60px 25px;
     }
 
     header {
       text-align: center;
-      border-bottom: 1px solid #bbb;
-      margin-bottom: 45px;
-      padding-bottom: 25px;
+      margin-bottom: 60px;
+      border-bottom: 1px solid #cfcfcf;
+      padding-bottom: 30px;
     }
 
     h1 {
-      font-size: 42px;
-      margin-bottom: 8px;
+      font-size: 48px;
+      margin-bottom: 10px;
       font-weight: normal;
+      letter-spacing: 1px;
     }
 
     .subtitle {
-      font-size: 17px;
-      color: #555;
+      color: #666;
+      font-size: 18px;
     }
 
     .paper {
-      background: #fff;
-      border: 1px solid #d6d2c8;
-      padding: 30px;
-      margin-bottom: 28px;
+      background: white;
+      border: 1px solid #ddd;
+      padding: 34px;
+      margin-bottom: 35px;
+      transition: 0.2s ease;
+    }
+
+    .paper:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 18px rgba(0,0,0,0.06);
+    }
+
+    .featured {
+      border: 2px solid #111;
+      background: #fcfcfc;
+    }
+
+    .featured-tag {
+      display: inline-block;
+      font-size: 12px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      background: black;
+      color: white;
+      padding: 6px 10px;
+      margin-bottom: 18px;
     }
 
     .paper h2 {
       margin-top: 0;
-      font-size: 26px;
+      margin-bottom: 12px;
+      font-size: 30px;
       font-weight: normal;
     }
 
     .meta {
       font-size: 14px;
-      color: #666;
-      margin-bottom: 15px;
+      color: #777;
+      margin-bottom: 18px;
+    }
+
+    .paper p {
+      font-size: 17px;
+      color: #333;
     }
 
     .button {
       display: inline-block;
-      margin-top: 12px;
-      padding: 9px 16px;
-      border: 1px solid #222;
-      color: #222;
+      margin-top: 18px;
+      padding: 10px 18px;
+      border: 1px solid #111;
       text-decoration: none;
+      color: #111;
       font-size: 14px;
+      transition: 0.2s ease;
     }
 
     .button:hover {
-      background: #222;
+      background: #111;
       color: white;
     }
 
     footer {
-      margin-top: 50px;
+      margin-top: 70px;
       text-align: center;
-      font-size: 13px;
       color: #777;
+      font-size: 13px;
+      border-top: 1px solid #ddd;
+      padding-top: 25px;
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
 
-    <header>
-      <h1>Faux Academic Notes</h1>
-      <div class="subtitle">
-        Short satirical technical notes written in academic style.
-      </div>
-    </header>
+<div class="container">
 
-    <section class="paper">
-      <h2>The One-Woman Optimization Problem</h2>
-      <div class="meta">Technical Note · May 2026</div>
-      <p>
-        A satirical technical note on male courtship labor,
-        provider expectations, dating markets, and modern optimization culture.
-      </p>
-      <a class="button" href="one_woman_optimization_problem_with_example.pdf">
-        Read PDF
-      </a>
-    </section>
+  <header>
+    <h1>Faux Academic Notes</h1>
 
-    <section class="paper">
-      <h2>The Post-Degree Learning Refusal in CS Students</h2>
-      <div class="meta">Technical Note · May 2026</div>
-      <p>
-        A faux-academic note modeling burnout, AI uncertainty,
-        and the “Any-Work Event Horizon” among CS graduates.
-      </p>
-      <a class="button" href="post_degree_learning_refusal_cs_students.pdf">
-        Read PDF
-      </a>
-    </section>
+    <div class="subtitle">
+      Satirical technical notes, pseudo-mathematical models,
+      and internet-grade academic catastrophes.
+    </div>
+  </header>
 
-    <footer>
-      © 2026 Faux Academic Notes
-    </footer>
 
-  </div>
+  <!-- MAIN FEATURED PAPER -->
+
+  <section class="paper featured">
+
+    <div class="featured-tag">
+      Featured Paper
+    </div>
+
+    <h2>
+      The Friend Zone as a Multi-Level Marketing Scheme
+    </h2>
+
+    <div class="meta">
+      Technical Note · May 2026
+    </div>
+
+    <p>
+      A satirical economic analysis of the friend zone through the lens of
+      multi-level marketing systems, sunk-cost dynamics, asymmetric payoff,
+      recruitment economies, and survivor-bias-driven emotional investment.
+    </p>
+
+    <a class="button" href="friend_zone_as_mlm.pdf">
+      Read PDF
+    </a>
+
+  </section>
+
+
+  <!-- OTHER PAPERS -->
+
+  <section class="paper">
+
+    <h2>
+      The One-Woman Optimization Problem
+    </h2>
+
+    <div class="meta">
+      Technical Note · May 2026
+    </div>
+
+    <p>
+      A satirical technical note on male courtship labor,
+      provider expectations, dating markets,
+      and modern optimization culture.
+    </p>
+
+    <a class="button"
+       href="one_woman_optimization_problem_with_example.pdf">
+      Read PDF
+    </a>
+
+  </section>
+
+
+  <section class="paper">
+
+    <h2>
+      The Post-Degree Learning Refusal in CS Students
+    </h2>
+
+    <div class="meta">
+      Technical Note · May 2026
+    </div>
+
+    <p>
+      A faux-academic note modeling burnout,
+      AI uncertainty, economic anxiety,
+      and the “Any-Work Event Horizon”
+      among CS graduates.
+    </p>
+
+    <a class="button"
+       href="post_degree_learning_refusal_cs_students.pdf">
+      Read PDF
+    </a>
+
+  </section>
+
+
+  <footer>
+    © 2026 Nawar Sgier · Faux Academic Notes
+  </footer>
+
+</div>
+
 </body>
 </html>
