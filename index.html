@@ -1,77 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Faux Academic Notes</title>
+
   <style>
     body {
-      font-family: Arial;
-      max-width: 900px;
-      margin: auto;
-      padding: 40px;
-      background: #f5f5f5;
-      color: #222;
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: #f7f6f2;
+      color: #1f1f1f;
+      line-height: 1.6;
     }
 
-    .paper {
-      background: white;
-      padding: 25px;
-      margin-bottom: 30px;
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    .container {
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 60px 25px;
+    }
+
+    header {
+      text-align: center;
+      border-bottom: 1px solid #bbb;
+      margin-bottom: 45px;
+      padding-bottom: 25px;
     }
 
     h1 {
-      text-align: center;
+      font-size: 42px;
+      margin-bottom: 8px;
+      font-weight: normal;
     }
 
-    a.button {
+    .subtitle {
+      font-size: 17px;
+      color: #555;
+    }
+
+    .paper {
+      background: #fff;
+      border: 1px solid #d6d2c8;
+      padding: 30px;
+      margin-bottom: 28px;
+    }
+
+    .paper h2 {
+      margin-top: 0;
+      font-size: 26px;
+      font-weight: normal;
+    }
+
+    .meta {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 15px;
+    }
+
+    .button {
       display: inline-block;
-      padding: 10px 18px;
-      background: black;
-      color: white;
+      margin-top: 12px;
+      padding: 9px 16px;
+      border: 1px solid #222;
+      color: #222;
       text-decoration: none;
-      border-radius: 8px;
-      margin-top: 10px;
+      font-size: 14px;
     }
 
-    a.button:hover {
-      opacity: 0.8;
+    .button:hover {
+      background: #222;
+      color: white;
+    }
+
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 13px;
+      color: #777;
     }
   </style>
 </head>
 
 <body>
+  <div class="container">
 
-<h1>Faux Academic Notes</h1>
+    <header>
+      <h1>Faux Academic Notes</h1>
+      <div class="subtitle">
+        Short satirical technical notes written in academic style.
+      </div>
+    </header>
 
-<div class="paper">
-  <h2>The One-Woman Optimization Problem</h2>
+    <section class="paper">
+      <h2>The One-Woman Optimization Problem</h2>
+      <div class="meta">Technical Note · May 2026</div>
+      <p>
+        A satirical technical note on male courtship labor,
+        provider expectations, dating markets, and modern optimization culture.
+      </p>
+      <a class="button" href="one_woman_optimization_problem_with_example.pdf">
+        Read PDF
+      </a>
+    </section>
 
-  <p>
-    A satirical technical note on male courtship labor,
-    provider expectations, dating markets, and modern optimization culture.
-  </p>
+    <section class="paper">
+      <h2>The Post-Degree Learning Refusal in CS Students</h2>
+      <div class="meta">Technical Note · May 2026</div>
+      <p>
+        A faux-academic note modeling burnout, AI uncertainty,
+        and the “Any-Work Event Horizon” among CS graduates.
+      </p>
+      <a class="button" href="post_degree_learning_refusal_cs_students.pdf">
+        Read PDF
+      </a>
+    </section>
 
-  <a class="button"
-     href="one_woman_optimization_problem_with_example.pdf">
-     Read PDF
-  </a>
-</div>
+    <footer>
+      © 2026 Faux Academic Notes
+    </footer>
 
-<div class="paper">
-  <h2>The Post-Degree Learning Refusal in CS Students</h2>
-
-  <p>
-    A faux-academic note modeling burnout, AI uncertainty,
-    and the “Any-Work Event Horizon” among CS graduates.
-  </p>
-
-  <a class="button"
-     href="post_degree_learning_refusal_cs_students.pdf">
-     Read PDF
-  </a>
-</div>
-
+  </div>
 </body>
 </html>
